@@ -321,7 +321,7 @@ p.text-block {    color: #000;}
 .top-set {    position: relative;    top: 29px;}
 .set-img-this-box img {    height: 79px;    position: absolute;    height: 614px;    top: -96%;}
 .ttm-page-title-row {    display: block;    padding-top: 100px;    padding-bottom: 85px;    z-index: 11;}
-.ttm-page-title-row {    position: relative;    background-image: url(img/breadcumb.jpg);    background-size: cover;    background-repeat: no-repeat;    background-position: center;}
+.ttm-page-title-row {    position: relative;    background-image: url(img/breadcumb.png);    background-size: cover;    background-repeat: no-repeat;    background-position: center;}
 .about_us-img img{border: 10px solid #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 .team-content h3 {    font-size: 25px;    color: #f58634;}
 .team-imge img {    width: 30%;}

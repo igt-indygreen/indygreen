@@ -1,0 +1,5 @@
+[06-May-2024 22:47:12 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in /home/indygreentech/public_html/mailer/vendor/phpmailer/phpmailer/src/PHPMailer.php:1299
+Stack trace:
+#0 /home/indygreentech/public_html/mail.php(29): PHPMailer\PHPMailer\PHPMailer->setFrom('', '')
+#1 {main}
+  thrown in /home/indygreentech/public_html/mailer/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1299

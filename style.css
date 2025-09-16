@@ -23,7 +23,7 @@ b{font-family: arial; }
 
 .fennec-mobile-nav .navbar-nav {  overflow-y: auto;  height: 428px;}
 .fennec-nav .navbar .navbar-nav .nav-item {  position: relative;  padding: 0;}
-.fennec-nav .navbar .navbar-nav .nav-item a { color: #f58634;    text-transform: uppercase;    padding: 20px 10px;    position: relative;    z-index: 1;    margin: 0;    font-size: 15px;    font-weight: 700;    transition: 0.5s; letter-spacing: 1px;}
+.fennec-nav .navbar .navbar-nav .nav-item a { color: #f58634;    text-transform: uppercase;    padding: 20px 10px;    position: relative;    z-index: 1;    margin: 0;    font-size: 15px;    font-weight: 700;    transition: 0.5s; letter-spacing: 1.5px;}
 
 .fennec-nav .navbar .navbar-nav .nav-item a:hover {color: #f58634;}
 .fennec-nav .navbar .navbar-nav .nav-item a:hover::before, .fennec-nav .navbar .navbar-nav .nav-item a:focus::before, .fennec-nav .navbar .navbar-nav .nav-item a.active::before {  opacity: 1;  visibility: visible;}

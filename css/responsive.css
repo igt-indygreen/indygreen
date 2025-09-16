@@ -1,15 +1,15 @@
-@media only screen and (min-width:991px) and (max-width:1199px)  {
+@media only screen and (min-width:996px) and (max-width:1199px)  {
 .card img { width: 100% !important;}
 .block-wrapper p {    font-size: 20px !important;}
-nav.navbar.navbar-expand-md.navbar-light.float-right.text-right.p-0 {  display: none!important;}
-nav.navbar.navbar-expand-md.navbar-light.mobile-menu {  display: block!important; right: 0px !important;}
+nav.navbar.navbar-expand-md.navbar-light.float-right.text-right.p-0 {  display: block!important;}
+nav.navbar.navbar-expand-md.navbar-light.mobile-menu {  display: none!important; right: 0px !important;}
 }
 
-@media only screen and (min-width:768px) and (max-width: 990px){
+@media only screen and (min-width:768px) and (max-width: 995px){
 .card img { width: 100% !important;}
 .block-wrapper p {    font-size: 20px !important;}
 nav.navbar.navbar-expand-md.navbar-light.float-right.text-right.p-0 {  display: none!important;}
-nav.navbar.navbar-expand-md.navbar-light.mobile-menu {  display: block!important; right: 0px !important;}
+nav.navbar.navbar-expand-md.navbar-light.mobile-menu {  display: block!important; left: 400px !important;}
 .mobile-major-client h5 {    color: #f58634 !important;}
 .e-mobility h5 {    color: #f58634 !important;}
 }

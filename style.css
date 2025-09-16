@@ -574,10 +574,6 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
     .welcome_side p {    font-size: 10px;}
 .welcome_side a {    font-size: 16px;}
 }
-{
-    .welcome_side p {    font-size: 12px;}
-.welcome_side a {    font-size: 16px;}
-}
 @media only screen and (max-width:768px)
 {
     .head-main

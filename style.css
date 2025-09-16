@@ -85,7 +85,6 @@ to {text-shadow: 0 0 20px #f3fffd, 0 0 30px #f3fffd , 0 0 40px #f3fffd , 0 0 50p
 .section-title .top-title::before {    content: "";    position: absolute;    top: 11px;    left: 0;    width: 60px;    height: 2px;    background-color: #ff8042;}
 .section-title h3 {    font-size: 42px;    margin-bottom: 15px;}
 .section-title h4 {    font-size: 42px;    margin-bottom: 15px;}
-.sec-title h4 {    font-size: 42px;    margin-bottom: 15px;}
 .section-title p {    max-width: 600px;    margin: auto;}
 .section-title {    max-width: 800px;    margin: 0px auto;    text-align: center;    position: relative;}
 .single-choose-us h3 {    font-size: 20px;  color: #f58634;  margin-bottom: 11px;}
@@ -567,6 +566,7 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
     font-size: 18px;
 }
 .section-title h5 {    font-size: 42px;    margin-bottom: 15px;}
+.sec-title h4 {    font-size: 42px;    margin-bottom: 15px;}
 
 }
 @media  (min-width:769px) and (max-width:1440px)
@@ -657,4 +657,5 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
   line-height: 1.6;
 }
 .section-title h5 {    font-size: 24px;    margin-bottom: 15px;}
+.sec-title h4 {    font-size: 24px;    margin-bottom: 15px;}
 }

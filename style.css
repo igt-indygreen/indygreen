@@ -135,10 +135,10 @@ a.orange_btn{background-image: -moz-linear-gradient( 0deg, rgb(225,125,66) 0%, r
 a.green-btn{background-image: -moz-linear-gradient( 0deg, rgb(118,194,27) 0%, rgb(167,218,66) 100%);    background-image: -webkit-linear-gradient( 0deg, rgb(118,194,27) 0%, rgb(167,218,66) 100%);    background-image: -ms-linear-gradient( 0deg, rgb(118,194,27) 0%, rgb(167,218,66) 100%);   padding: 12px 45px; border-radius: 30px;     box-shadow: 2.5px 4.33px 15px 0px rgb(0 0 0 / 15%);}
 color {    color: #0c599f;}
 .hero-slider-1{background: url(img/slider-1.png); height: 600px; background-attachment: fixed; background-size: cover;}
-.hero-slider-2{background: url(img/slider-4.webp); height: 600px; background-attachment: fixed; background-size: cover;}
+.hero-slider-2{background: url(img/slider-4.png); height: 600px; background-attachment: fixed; background-size: cover;}
 .hero-slider-3{background: url(img/slider-3.png); height: 600px; background-attachment: fixed; background-size: cover;}
-.hero-slider-4{background: url(img/slider-5.webp); height: 600px; background-attachment: fixed; background-size: cover;}
-.hero-slider-5{background: url(img/slider-6.webp); height: 600px; background-attachment: fixed; background-size: cover;}
+.hero-slider-4{background: url(img/slider-5.png); height: 600px; background-attachment: fixed; background-size: cover;}
+.hero-slider-5{background: url(img/slider-6.png); height: 600px; background-attachment: fixed; background-size: cover;}
 
 .slider-caption span{font-size: 50px; font-family: 'Oswald', sans-serif;   line-height: 1.1; margin-bottom: 20px;    font-weight: 900;}
 .slider-caption h1{font-size: 50px; font-family: 'Oswald', sans-serif;   line-height: 1.1; margin-bottom: 20px;    font-weight: 900;}

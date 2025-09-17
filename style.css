@@ -166,7 +166,7 @@ color {    color: #0c599f;}
 .project-block-four .inner-box:hover .overlay-box .inner,
 .project-block-four.active .inner-box .overlay-box .inner{	bottom: 0;}
 .project-section-two.style-two .project-block-four .inner-box {   /* background-color: rgba(255,255,255,.20); */   padding-top: 70px;    padding-bottom: 30px;}
-.project-section-two.style-two {    background-repeat: no-repeat;    background-position: center;    background-size: cover;    padding-top: 300px;}
+.project-section-two.style-two {    background-repeat: no-repeat;    background-position: center;    background-size: cover;    padding-top: 200px;}
 .project-section-two.style-two .project-block-four .overlay-box .inner {    background-color: #fda700;}
 .imghvr1 img {    border: 1px solid #f58634;}
 .blue-color {    background: #0c599f !important;}

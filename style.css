@@ -495,6 +495,7 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f58634;
 }
 .header-tag
 {
@@ -622,6 +623,7 @@ color.orange{color: #ff8042;}
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f58634;
 }
 .welcome_side p {    font-size: 12px;}
 .welcome_side a {    font-size: 16px;}

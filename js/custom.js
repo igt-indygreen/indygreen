@@ -74,7 +74,7 @@ $('#counter-block').ready(function(){
 $('.solar').animationCounter({
 start: 0,
 step: 100,
-delay:100,
+delay:30,
 end: 5999,
 txt: ' MW'
 });
@@ -82,20 +82,20 @@ $('.lithium').animationCounter({
 start: 0,
 end: 2000,
 step: 50,
-delay: 100,
+delay: 30,
 txt: ' MWh'
 });
 $('.projects').animationCounter({
 start: 0,
 step: 5,
-delay:100,
+delay:30,
 end: 89
 });
 $('.clients').animationCounter({
 start: 0,
 end: 349,
 step: 5,
-delay: 100
+delay: 30
 });
 });
 

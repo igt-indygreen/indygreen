@@ -2602,6 +2602,40 @@ style="background: url(img/unit-3.jpg)no-repeat; background-size: cover;">
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/ma5-menu.min.js"></script>
 <script type="text/javascript" src="js/animationCounter.min.js"></script>
+<script>
+    function animateCounter(el) {
+      const target = +el.getAttribute("data-target");
+      const speed = 2; // smaller = faster
+      const increment = target / speed;
+      let count = 0;
+
+      function updateCounter() {
+        count += increment;
+        if (count < target) {
+          el.textContent = Math.floor(count);
+          requestAnimationFrame(updateCounter);
+        } else {
+          el.textContent = target;
+        }
+      }
+      updateCounter();
+    }
+
+    // Trigger on scroll
+    const counters = document.querySelectorAll(".counter");
+    let started = false;
+
+    window.addEventListener("scroll", () => {
+      const section = document.getElementById("portfolio");
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (!started && sectionTop < windowHeight - 100) {
+        counters.forEach(counter => animateCounter(counter));
+        started = true;
+      }
+    });
+  </script>
 <!-- Slider Item-->
 </body>
 </html>

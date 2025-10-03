@@ -212,7 +212,7 @@ a.site-button-link {background-image: -moz-linear-gradient( 0deg, rgb(118,194,27
 .contact-form .form-group .form-btn {    position: absolute;    right: 20px;    bottom: 20px;}
 .brand__area-2 {    background-position: center;    background-size: cover;    background-repeat: no-repeat;}
 .brand__image-item:hover .brand__image-item-ab img {    top: 50%;    transform: translateY(-50%);}
-.brand__image-item-ab img {    position: relative;    z-index: 1;    top: 80%;    transform: translateY(-80%);    transition: 0.3s;}
+.brand__image-item-ab img {    position: relative;    z-index: 1;    top: 80%;    transform: translateY(-80%); aspect-ratio: 3/4;    transition: 0.3s;}
 .brand__image-item-bb{    border-bottom: 1px solid #e5e5e5;}
 .brand__image-item-br {    border-right: 1px solid #e5e5e5;}
 .brand__image-item {    padding: 28px 5px;    text-align: center;    position: relative;}

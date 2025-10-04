@@ -825,7 +825,7 @@ color.orange{color: #ff8042;}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .client-logo {

@@ -6,7 +6,6 @@
 <title>Our Clients</title>
 
 <!-- Swiper CSS -->
-<link rel="stylesheet" href="s">
 
 <style>
 body {
@@ -73,11 +72,12 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 .line {
-    width: 4px;
-    height: 1100px;
-    border: 3px solid #ff6600;
-    margin-top: 70px;
+    width: 4px;          /* thickness of vertical line */
+    height: 1100px;        /* full height of container */
+    background: #ff6600; /* color */
+    margin: 0 20px;      /* space around line */
 }
+
 /* Mobile Carousel */
 @media (max-width: 768px) {
     .client-grid {
@@ -266,7 +266,8 @@ body {
                 </div>
     </div>
     </div>
-    <hr class="Lines">
+    <div class="line"></div>
+
     <div class="emob col-lg-6">
         <h3>LITHIUM BATTERIES</h3>
     <div class="client-grid emobility-clients">

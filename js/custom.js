@@ -71,7 +71,7 @@ slidesToScroll: 1
 ////
 $('#counter-block').ready(function(){
 
-$('.solar').animationCounter({
+$('.solar-numb').animationCounter({
 start: 0,
 step: 100,
 delay:30,
@@ -91,7 +91,7 @@ step: 2,
 delay:30,
 end: 119
 });
-$('.clients').animationCounter({
+$('.clients-numb').animationCounter({
 start: 0,
 end: 399,
 step: 5,

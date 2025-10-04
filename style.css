@@ -733,3 +733,81 @@ color.orange{color: #ff8042;}
 }
 
 
+
+.clients h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.clients {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.more-clients h3 {
+    text-align: center;
+    font-size: 48px;
+    color: #ff6600;
+    text-decoration: underline;
+    margin: 40px 0 20px;
+}
+.clients h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #ff6600;
+    text-decoration: underline;
+    margin: 40px 0 20px;
+}
+
+/* Desktop Grid */
+.client-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.client-logo {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.line {
+    width: 4px;
+    height: 1200px;
+    border: 3px solid #ff6600;
+    margin-top: 70px;
+}
+/* Mobile Carousel */
+@media (max-width: 768px) {
+    .client-grid {
+        display: none; /* hide desktop grid */
+    }
+    .swiper {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}

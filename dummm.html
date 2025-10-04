@@ -6,7 +6,7 @@
 <title>Our Clients</title>
 
 <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="s">
 
 <style>
 body {
@@ -28,7 +28,11 @@ body {
     color: #333;
     margin-bottom: 20px;
 }
-
+.clients {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
 .clients h3 {
     text-align: center;
     font-size: 28px;
@@ -42,7 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .client-logo {
@@ -68,7 +72,12 @@ body {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
-
+.line {
+    width: 4px;
+    height: 1100px;
+    border: 3px solid #ff6600;
+    margin-top: 70px;
+}
 /* Mobile Carousel */
 @media (max-width: 768px) {
     .client-grid {
@@ -87,10 +96,10 @@ body {
 </head>
 <body>
 
-<div class="container clients">
-    <h2>Our Major Clientele</h2>
+<div class="container clients col-lg-12">
 
-    <h3>SOLAR</h3>
+    <div class="solar col-lg-6">
+        <h3>SOLAR</h3>
     <div class="client-grid solar-clients">
         <div class="client-logo ">
                     <a href="#"><img src="img/solar/n1.png" alt="WAAREE" title="WAAREE" class="w-100"></a>
@@ -175,20 +184,10 @@ body {
                     <a href="#"><img src="img/solar/t3.png" alt="SUNIFY" title="SUNIFY" class="w-100"></a>
                 </div>
                 <div class="client-logo ">
-                    <a href="#"><img src="img/solar/t4.png" alt="Joint Solar" title="Joint Solar" class="w-100"></a>
-                </div>
-                <div class="client-logo ">
                     <a href="#"><img src="img/solar/t5.png" alt="IAA Solar Panels" title="IAA Solar Panels" class="w-100"></a>
-                </div>
-                 <div class="client-logo ">
-                    <a href="#"><img src="img/solar/t6.png" alt="INNOLIA ENERGY" title="INNOLIA ENERGY" class="w-100"></a>
                 </div>
                 <div class="client-logo ">
                     <a href="#"><img src="img/solar/t7.png" alt="Citizen Solar" title="Citizen Solar" class="w-100"></a>
-                </div>
-                
-                <div class="client-logo ">
-                    <a href="#"><img src="img/solar/t8.png" alt="Sanelite" title="Sanelite" class="w-100"></a>
                 </div>
                 <div class="client-logo ">
                     <a href="#"><img src="img/solar/t9.png" alt="SuryaKamal" title="SuryaKamal" class="w-100"></a>
@@ -205,10 +204,6 @@ body {
                 <div class="client-logo ">
                     <a href="#"><img src="img/solar/a3.png" alt="Cosmic" title="Cosmic" class="w-100"></a>
                 </div>
-                
-                <div class="client-logo ">
-                <a href="#"><img src="img/solar/a4.png" alt="ESP" title="ESP" class="w-100"></a>
-                </div>
                 <div class="client-logo ">
                 <a href="#"><img src="img/solar/a5.png" alt="JAKSON Empowering People" title="JAKSON Empowering People" class="w-100"></a>
                 </div>
@@ -217,9 +212,6 @@ body {
                 </div>
                 <div class="client-logo ">
                 <a href="#"><img src="img/solar/a7.png" alt="NEOSOL" title="NEOSOL" class="w-100"></a>
-                </div>
-                <div class="client-logo ">
-                <a href="#"><img src="img/solar/a8.png" alt="Aditya Namah" title="Aditya namah" class="w-100"></a>
                 </div>
                 <div class="client-logo ">
                 <a href="#"><img src="img/solar/a9.png" alt="SolarMaxx" title="SolarMaxx" class="w-100"></a>
@@ -235,9 +227,6 @@ body {
                   <a href="#"><img src="img/solar/a12.png" alt="Powertrac" title="Powertrac" class="w-100"></a>  
                 </div>
                 <div class="client-logo ">
-                 <a href="#"><img src="img/solar/b1.png" alt="Ankur Lighting" title="Ankur Lighting" class="w-100"></a>   
-                </div>
-                <div class="client-logo ">
                  <a href="#"><img src="img/solar/b2.png" alt="INTER SOLAR" title="INETER SOLAR" class="w-100"></a>   
                 </div>
                 <div class="client-logo ">
@@ -251,9 +240,6 @@ body {
                  <a href="#"><img src="img/solar/b5.png" alt="Australian Premium Solar" title="Australian Premium Solar" class="w-100"></a>   
                 </div>
                 <div class="client-logo ">
-                  <a href="#"><img src="img/solar/b6.png" alt="BRAWN" title="BRAWN" class="w-100"></a>  
-                </div>
-                <div class="client-logo ">
                   <a href="#"><img src="img/solar/b7.png" alt="Greenbrilliance" title="Greenbrilliance" class="w-100"></a>  
                 </div>
                 <div class="client-logo ">
@@ -264,39 +250,25 @@ body {
                 </div>
                 
                 <div class="client-logo ">
-                    <a href="#"><img src="img/solar/b10.png" alt="SAHAJ" title="SAHAJ" class="w-100"></a>
-                </div>
-                <div class="client-logo ">
                   <a href="#"><img src="img/solar/b11.png" alt="Shivam Photovoltaics" title="Shivam Photovoltaics" class="w-100"></a>  
                 </div>
-                <div class="client-logo ">
-                  <a href="#"><img src="img/solar/c1.png" alt="SunEarth Solar" title="SunEarth Solar" class="w-100"></a>  
-                </div>
-                <div class="client-logo ">
-                 <a href="#"><img src="img/solar/c2.png" alt="SUN USA" title="SUN USA" class="w-100"></a>   
-                </div>
-                <div class="client-logo ">
-                 <a href="#"><img src="img/solar/c3.png" alt="WOLT SOLAR" title="WOLT SOLAR" class="w-100"></a>   
-                </div>
-                <div class="client-logo ">
-                 <a href="#"><img src="img/solar/c4.png" alt="J&B POWER SOLAR" title="J&B POWER SOLAR" class="w-100"></a>   
-                </div>
-                 
                 <div class="client-logo ">
                    <a href="#"><img src="img/solar/c6.png" alt="Redren" title="Redren" class="w-100"></a> 
                 </div>
                 <div class="client-logo ">
-                 <a href="#"><img src="img/solar/c7.png" alt="Prashant Plastic Industries LLP" title="Prashant Plastic Industries LLP" class="w-100"></a>   
-                </div>
-                <div class="client-logo ">
                    <a href="#"><img src="img/solar/c8.png" alt="Jain Irrigation System Ltd." title="Jain Irrigation System Ltd." class="w-100"></a> 
                 </div>
-                <div class="client-logo ">
-                  <a href="#"><img src="img/solar/c9.png" alt="Sonali Solar" title="Sonali Solar" class="w-100"></a>  
+                 <div class="client-logo ">
+                   <a href="#"><img src="img/solar/tata-solar.png" alt="Tata Solar" title="Tata Solar" class="w-100"></a> 
+                </div>
+                 <div class="client-logo ">
+                   <a href="#"><img src="img/solar/vikram-solar.png" alt="Vikram Solar" title="Vikram Solar" class="w-100"></a> 
                 </div>
     </div>
-
-    <h3>E-MOBILITY</h3>
+    </div>
+    <hr class="line">
+    <div class="emob col-lg-6">
+        <h3>LITHIUM BATTERIES</h3>
     <div class="client-grid emobility-clients">
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-1.png" alt="Ruchira Green Earth" title="Ruchira Green Earth" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-3.png" alt="ECOMILE" title="ECOMILE" class="w-100"></a></div>
@@ -311,16 +283,13 @@ body {
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-14.png" alt="ASCEND" title="ASCEND" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-16.png" alt="SCION Energy Storage" title="SCION Energy Storage" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-18.png" alt="GETSUN POWER" title="GETSUN POWER" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-19.png" alt="YN" title="YN" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-20.png" alt="Bindal Powertech" title="Bindal Powertech" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-22.png" alt="LOHUM" title="LOHUM" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-23.png" alt="VT" title="VT" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-24.png" alt="MICRONIX" title="MICRONIX" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-25.png" alt="PASTICHE" title="PASTICHE" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-28.png" alt="LI-ON" title="LI-ON" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-31.png" alt="Future Hi-Tech Batteries" title="Future Hi-Tech Batteries" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-32.png" alt="Preton Energy" title="Preton Energy" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-34.png" alt="Ampton Energy" title="Ampton Energy" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-35.png" alt="STEFEN ELECTRIC" title="STEFEN ELECTRIC" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-37.png" alt="SUPER MEXX" title="SUPER MEXX" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/logo-41.png" alt="EMMORTAL AUTOMOTIVES" title="EMMORTAL AUTOMOTIVES" class="w-100"></a></div>
@@ -347,17 +316,14 @@ body {
         <div class="client-logo"><a href="#"><img src="img/e-mobility/ampton.png" alt="ampton" title="ampton" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/nexzu.png" alt="Nexzu" title="Nexzu" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/genus.png" alt="Genus" title="Genus" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/litpax.png" alt="Liptax" title="Liptax" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/ascend.png" alt="Ascend" title="Ascend" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/eveready.png" alt="Eveready" title="Eveready" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/klk.png" alt="KLK" title="KLK" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/boson.png" alt="Boson Technologies" title="Boson Technologies" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/vt.png" alt="Voltherm Technologies" title="Voltherm Technologies" class="w-100"></a></div>
-        <div class="client-logo"><a href="#"><img src="img/e-mobility/ruchira-green-earth.png" alt="Ruchira Green Earth" title="Ruchira Green Earth" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/micronix.png" alt="Micronix" title="Micronix" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/flow-tech.png" alt="Flow Tech" title="Flow Tech" class="w-100"></a></div>
         <div class="client-logo"><a href="#"><img src="img/e-mobility/future.png" alt="Future High Tech Batteries" title="Future High Tech Batteries" class="w-100"></a></div>
 
+    </div>
     </div>
 </div>
 

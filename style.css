@@ -604,6 +604,21 @@ color.orange{color: #ff8042;}
       color: #fff;
       transform: scale(1.05);
     }
+        .btn-customus {
+      border-radius: 50px;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      border: none;
+      transition: 0.3s ease;
+    }
+    .btn-customus:hover {
+      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      color: #fff;
+      transform: scale(1.05);
+    }
     .product 
     {
         display: flex;
@@ -614,7 +629,7 @@ color.orange{color: #ff8042;}
     {
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 2px 5px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
     .product-image:hover 
@@ -790,6 +805,21 @@ color.orange{color: #ff8042;}
       color: #fff;
       transform: scale(1.05);
     }
+    .btn-customus {
+      border-radius: 50px;
+      padding: 8px 10px;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      transition: 0.3s ease;
+      width: 100%;
+    }
+    .btn-customus:hover {
+      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      color: #fff;
+      transform: scale(1.05);
+    }
 }
 
 
@@ -873,3 +903,250 @@ color.orange{color: #ff8042;}
 }
 
 
+    .application-section {
+        max-width: 100%;
+        margin: auto;
+        background: #fff;
+        padding: 40px 50px;
+    }
+
+    .application-section h1 {
+        color: #006837;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .application-section h2 {
+        color: #004d26;
+        border-left: 5px solid #00a859;
+        padding-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    .application-section ul {
+        list-style-type: numbered;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    .application-section ul li {
+        margin: 8px 0;
+        padding: 8px 8px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+
+    .highlight {
+        background-color: #d1f7e1;
+        font-weight: 600;
+        padding: 3px 6px;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+        .application-section {
+            padding: 25px 20px;
+        }
+       .application-section h2 {
+            font-size: 1.6em;
+        }
+    }
+
+
+
+
+
+    .application-sec ul {
+        list-style-type: disc;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    .application-sec ul li {
+        margin: 8px 0;
+
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+
+
+.app h2 {
+        color: #004d26;
+        padding-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-decoration: underline;
+}
+
+.app p {
+  text-align: center;
+  color: #555;
+  font-size: 1.05em;
+  margin-bottom: 40px;
+}
+
+.app-sec {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ----- Left List Section ----- */
+.application-sec {
+  flex: 1;
+}
+
+.application-sec ul {
+  list-style: disc inside ;
+  padding: 0;
+  margin: 0;
+}
+
+.application-sec ul li {
+  font-size: 1.05em;
+    padding: 4px 8px;
+  margin: 8px 0;    
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+
+/* ----- Right Image Section ----- */
+.app-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.app-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 992px) {
+  .app-sec {
+    flex-direction: column;     
+  }
+
+  .application-sec ul li {
+    font-size: 14px;
+  }
+
+  .app-image img {
+    max-width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 10px 20px;
+  }
+  .app p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .app h2 {
+    font-size: 1.6em;
+     border-left: 5px solid #00a859;
+     text-align: left;
+     text-decoration: none;
+  }
+
+  .application-sec ul li {
+    padding: 2px 8px;
+  }
+}
+
+
+
+/* ===== Why Choose Section ===== */
+.why-choose {
+  max-width: 100%;
+  margin: 60px auto;
+
+}
+
+.why-choose h2 {
+  font-size: 2em;
+  color: #006837;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.why-choose h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #00a859;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+}
+
+.why-choose ul li {
+  background: #f0fdf4;
+  color: #004d26;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border-left: 5px solid #00a859;
+  border-radius: 8px;
+  font-size: 1.05em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.why-choose ul li::before {
+  content: "✔";
+  color: #00a859;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.why-choose ul li:hover {
+  background: #e7f7ed;
+  transform: translateX(8px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 30px 20px;
+  }
+
+  .why-choose h2 {
+    font-size: 1.6em;
+  }
+
+  .why-choose ul li {
+    font-size: 1em;
+  }
+}

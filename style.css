@@ -1041,7 +1041,7 @@ color.orange{color: #ff8042;}
 /* ----- Responsive Design ----- */
 @media (max-width: 992px) {
   .app-sec {
-    flex-direction: column;     
+    flex-direction:column-reverse;     
   }
 
   .application-sec ul li {

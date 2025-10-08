@@ -814,6 +814,7 @@ color.orange{color: #ff8042;}
         margin-top: 25px;
         text-align: center;
     }
+    
     .product-description h2
     {
         font-size: 24px;
@@ -1197,3 +1198,34 @@ color.orange{color: #ff8042;}
 }
 
 
+.product-description ul {
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.product-description ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.product-description ul li::before {
+  content: "✔"; /* You can replace this with another symbol or icon */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00a859; /* Indygreen’s signature green tone */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-description ul li:hover {
+  color: #00723f; /* Slightly darker on hover */
+  transform: translateX(5px);
+  cursor: default;
+}

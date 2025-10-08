@@ -647,6 +647,7 @@ color.orange{color: #ff8042;}
         border-radius: 10px;
         overflow: hidden;
         transition: transform 0.3s ease;
+        border: 1px solid #1e1e1e;
     }
     .products-image:hover 
     {
@@ -792,9 +793,10 @@ color.orange{color: #ff8042;}
     }
     .products-image 
     {
+        border-radius: 10px;
         overflow: hidden;
-
         transition: transform 0.3s ease;
+        border: 1px solid #1e1e1e;
     }
     .products-image:hover 
     {

@@ -1118,8 +1118,6 @@ color.orange{color: #ff8042;}
   }
 }
 
-
-
 /* ===== Why Choose Section ===== */
 .why-choose {
   max-width: 100%;
@@ -1249,6 +1247,7 @@ color.orange{color: #ff8042;}
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
+    border-right:1px solid rgb(255, 255, 255);
   }
 
   .product-description tr:hover {
@@ -1259,10 +1258,12 @@ color.orange{color: #ff8042;}
     font-weight: 600;
     color: #1b4b72;
     width: 5%;
+    border-right:1px solid rgba(0,0,0,0.1);
   }
 
   .product-description td:nth-child(2) {
     width: 30%;
+    border-right:1px solid rgba(0,0,0,0.1);
   }
 
   .product-description td:nth-child(3) {

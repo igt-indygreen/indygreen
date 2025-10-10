@@ -3,119 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Turnkey Solution for Cylindrical Battery Pack Assembly</title>
+<title>Enquiry Form</title>
 <style>
-    body {
-        font-family: 'Poppins', Arial, sans-serif;
-        background-color: #f8f9fb;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-    }
-
-    .application-section {
-        max-width: 1100px;
-        margin: 50px auto;
-        background: #fff;
-        padding: 40px 50px;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .application-section h1 {
-        color: #006837;
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 25px;
-    }
-
-    .application-section h2 {
-        color: #004d26;
-        border-left: 5px solid #00a859;
-        padding-left: 10px;
-        margin-top: 40px;
-        margin-bottom: 15px;
-    }
-
-    .application-section ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .application-section ul li {
-        background: #f0fdf4;
-        margin: 8px 0;
-        padding: 12px 18px;
-        border-left: 5px solid #00a859;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-    }
-
-    .application-section ul li:hover {
-        background: #e8f7ee;
-        transform: translateX(5px);
-    }
-
-    .highlight {
-        background-color: #d1f7e1;
-        font-weight: 600;
-        padding: 3px 6px;
-        border-radius: 4px;
-    }
-
-    @media (max-width: 768px) {
-        .application-section {
-            padding: 25px 20px;
-        }
-       .application-section h2 {
-            font-size: 1.6em;
-        }
-    }
+body {font-family: Arial; background: #f9f9f9; padding: 20px;}
+form {max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;}
+input, textarea {width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;}
+button {background: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;}
+button:hover {background: #218838;}
+#popupsuccessmsg {color: green; font-weight: bold; text-align: center;}
 </style>
 </head>
 <body>
 
-<div class="application-section">
+<h2>Enquiry Form</h2>
 
-    <h2>Complete Process Flow</h2>
-    <ul>
-        <li><strong>Cell Testing –</strong> Accurate evaluation of cell capacity, voltage, and internal resistance to ensure quality performance.</li>
-        <li><strong>Sticker Pasting –</strong> Automatic label application for easy identification and traceability.</li>
-        <li><strong>IR Sorting –</strong> Intelligent sorting based on internal resistance values to maintain pack uniformity.</li>
-        <li><strong>Polarity Detection –</strong> Automated detection and correction of cell polarity for safe assembly.</li>
-        <li><strong>Welding –</strong> High-precision spot welding or laser welding for strong electrical and mechanical connections.</li>
-        <li><strong>BMS Testing & Installation –</strong> Integration and functional testing of the Battery Management System for optimal safety and performance.</li>
-        <li><strong>Sleeve Lamination –</strong> Protective sleeve application for insulation and enhanced pack durability.</li>
-        <li><strong>Battery Testing –</strong> Final performance, capacity, and safety tests to ensure reliable output before dispatch.</li>
-    </ul>
-
-    <h2>Applications</h2>
-    <ul>
-        <li>Power Tools</li>
-        <li>Power Banks</li>
-        <li>Drones</li>
-        <li>E-Bikes & E-Scooters</li>
-        <li>Solar Street Lights</li>
-        <li>Medical Devices</li>
-        <li>UPS Systems</li>
-        <li>Toys & Hobby Devices</li>
-        <li>Agricultural Equipment</li>
-        <li>Portable Energy Storage Units</li>
-        <li>Home and Office Backup Systems</li>
-        <li>IoT Devices</li>
-        <li>Electric Boats and Small Vehicles</li>
-    </ul>
-
-    <h2>Why Choose Indygreen Technologies?</h2>
-    <ul>
-        <li>End-to-end turnkey plant setup and integration</li>
-        <li>Automated and semi-automated machine solutions</li>
-        <li>Technical expertise in lithium battery production</li>
-        <li>Customizable plant design based on client requirements</li>
-        <li>Reliable after-sales support and training</li>
-    </ul>
-</div>
+<form action="enquiry.php" method="post">
+  <input type="hidden" name="enquiry_for" value="Enquiry For Contact Us">
+  
+  <label>Name:</label>
+  <input type="text" name="name" required>
+  
+  <label>Email:</label>
+  <input type="email" name="email" required>
+  
+  <label>Phone:</label>
+  <input type="text" name="phone" required>
+  
+  <label>Message:</label>
+  <textarea name="message" rows="5" required></textarea>
+  
+  <button type="submit">Send Enquiry</button>
+</form>
 
 </body>
 </html>

@@ -4,36 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Enquiry Form</title>
-<style>
-body {font-family: Arial; background: #f9f9f9; padding: 20px;}
-form {max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc;}
-input, textarea {width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;}
-button {background: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;}
-button:hover {background: #218838;}
-#popupsuccessmsg {color: green; font-weight: bold; text-align: center;}
-</style>
 </head>
 <body>
 
 <h2>Enquiry Form</h2>
 
-<form action="enquiry.php" method="post">
-  <input type="hidden" name="enquiry_for" value="Enquiry For Contact Us">
-  
-  <label>Name:</label>
+<form action="https://formspree.io/f/your_form_id" method="POST">
   <input type="text" name="name" required>
-  
-  <label>Email:</label>
   <input type="email" name="email" required>
-  
-  <label>Phone:</label>
-  <input type="text" name="phone" required>
-  
-  <label>Message:</label>
-  <textarea name="message" rows="5" required></textarea>
-  
+  <textarea name="message" required></textarea>
   <button type="submit">Send Enquiry</button>
 </form>
+
 
 </body>
 </html>

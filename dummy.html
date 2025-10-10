@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquiry Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
 </head>
 <body>
-
-<h2>Enquiry Form</h2>
-
-<form action="https://formspree.io/f/your_form_id" method="POST">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Send Enquiry</button>
-</form>
-
-
+  <form method="post" action="enquiry.php" >
+    <input type="text" name="company" placeholder="Company Name"></br></br>
+       <input type="text" name="name" placeholder="Full Name"></br></br>
+      <input type="text" name="email" placeholder="Email"></br></br>
+      <input type="text" name="mobile" placeholder="Your Mobile no"></br></br>
+       <input type="text" name="ps" placeholder="Product & Services Name"></br></br>
+     
+         <textarea name="message" row="15" cols="40" placeholder="Message"></textarea></br></br>
+         <input type="submit" name="xxx" />
+  </form>
 </body>
 </html>

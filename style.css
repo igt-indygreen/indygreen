@@ -1294,7 +1294,13 @@ color.orange{color: #ff8042;}
       margin-bottom: 20px;
       color: #444;
     }
-
+    .bess 
+    {
+      border-radius: 10px;
+      border: 1px solid orange;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
     .cell-tech ul {
       list-style-type: none;
       padding: 0;

@@ -1,20 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Enquiry Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+    form {
+      background: #fff;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #0078ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #005fcc;
+    }
+    .success, .error {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
 </head>
 <body>
-  <form method="post" action="enquiry.php" >
-    <input type="text" name="company" placeholder="Company Name"></br></br>
-       <input type="text" name="name" placeholder="Full Name"></br></br>
-      <input type="text" name="email" placeholder="Email"></br></br>
-      <input type="text" name="mobile" placeholder="Your Mobile no"></br></br>
-       <input type="text" name="ps" placeholder="Product & Services Name"></br></br>
-     
-         <textarea name="message" row="15" cols="40" placeholder="Message"></textarea></br></br>
-         <input type="submit" name="xxx" />
+
+  <form action="enquiry.php" method="POST">
+    <h2>Send Enquiry</h2>
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Phone</label>
+    <input type="text" name="phone">
+
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit" name="submit">Send Enquiry</button>
   </form>
+
 </body>
 </html>

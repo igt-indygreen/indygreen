@@ -1,47 +1,33 @@
 <?php
+if (isset($_POST['submit'])) {
+    $to = "digital35@gmail.com"; // <-- Replace with your email address
+    $subject = "New Enquiry from Website";
 
-if(!empty($_POST['xxx']))
-{
-   $compny = $_POST['company'];
-      $name = $_POST['name'];
-         $eml = $_POST['email'];
-            $mbl = $_POST['mobile'];  
-              $ps = $_POST['ps'];
-               $msg = $_POST['message'];
-               $tomail = "digitaligt35@gmail.com";
-               
-             
-                 
-               $kailash = "Company Name:".$compny.
-               "\r\n Full Name: ".$name.
-               "\r\n Email : ".$eml.
-               "\r\n Mobile :".$mbl.
-               "\r\n Product & Service Name :".$ps.
-               "\r\n Message :".$msg. "\r\n" ;
-               
-              $headers = [
-     
-                  "MIME-Version : 1.0",
-                  "Content-type : text/plain; charset=utf-8",
-                  "Cc : digitaligt35@gmail.com",
-               ];
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $message = htmlspecialchars($_POST['message']);
 
-         $headers = implode("\r\n", $headers);
-               
-               if(mail($tomail, $name, $kailash, $headers))
-               {
-                   echo "mail have sended...!";
-               }
-               else
-               {
-                   
-                   echo "mail failed ..!";
-               }
-               
-               
-               
-               
+    $body = "
+    You have received a new enquiry:
+
+    Name: $name
+    Email: $email
+    Phone: $phone
+    Message: 
+    $message
+    ";
+
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "<div class='success'>Thank you, your enquiry has been sent successfully.</div>";
+    } else {
+        echo "<div class='error'>Sorry, something went wrong. Please try again later.</div>";
+    }
+} else {
+    echo "<div class='error'>Invalid Request</div>";
 }
-
-
 ?>

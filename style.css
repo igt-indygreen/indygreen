@@ -1274,8 +1274,26 @@ color.orange{color: #ff8042;}
       font-size: 13px;
     }
   }
+  .sort td:first-child {
+    font-weight: 600;
+    color: #1b4b72;
+    width: 40%;
+    border-right:1px solid rgba(0,0,0,0.1);
+  }
 
+  .sort td:nth-child(2) {
+    width: 100%;
+    border-right:1px solid rgba(0,0,0,0.1);
+  }
 
+  .sort td:nth-child(3) {
+    width: 95%;
+  }
+  .sort table th, .sort table td {
+    padding: 5px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
 
    .cell-tech h3 {
       font-size: 1.5rem;

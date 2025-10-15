@@ -1374,6 +1374,24 @@ color.orange{color: #ff8042;}
       color: #1a5c3e;
       font-size: 1.2rem;
     }
+    .bess-inner
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bess-inner-image
+    {
+      margin: 10px;
+    }
+    .bess-inner-image img 
+    {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid orange;
+    }
     @media (max-width: 768px) {
       section.cell-tech {
         padding: 25px;
@@ -1384,4 +1402,23 @@ color.orange{color: #ff8042;}
       .sub-heading {
         font-size: 1.1rem;
       }
+      .bess-inner
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .bess-inner-image
+    {
+      margin: 10px;
+    }
+    .bess-inner-image img 
+    {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid orange;
+    }
     }

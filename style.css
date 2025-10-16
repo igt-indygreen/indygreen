@@ -866,7 +866,12 @@ color.orange{color: #ff8042;}
 }
 
 
-
+.cylindrical-cells h2 
+{
+  background-color: #f58634;
+  color: white;
+  text-align: center;
+}
 .clients h2 {
     text-align: center;
     font-size: 40px;

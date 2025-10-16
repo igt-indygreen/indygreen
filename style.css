@@ -872,6 +872,15 @@ color.orange{color: #ff8042;}
   color: white;
   text-align: center;
 }
+.cylindrical-logos img
+{
+  width: 100%;
+  max-width: 170px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #f58634;
+  padding: 10px;
+}
 .clients h2 {
     text-align: center;
     font-size: 40px;

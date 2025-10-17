@@ -1474,3 +1474,129 @@ color.orange{color: #ff8042;}
       box-shadow: 0 0 0 0 rgba(255,165,0, 0);
     }
   }
+
+
+
+    /* Container */
+  .infographic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;   
+  }
+
+  /* Individual Card */
+  .info-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  /* Hover Glow Effect */
+  .info-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,165,0,0.25), transparent 60%);
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+  }
+
+  .info-card:hover::before {
+    transform: scale(1);
+  }
+
+
+
+  /* Icon Styling */
+  .info-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    animation: popup 2.5s ease-in-out infinite;
+    box-shadow: 0 0 0 0 rgba(255, 230, 184, 0.5);
+    z-index: 1;
+    position: relative;
+  }
+
+  /* Popup Animation */
+  @keyframes popup {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255,165,0, 0.5);
+    }
+    50% {
+      transform: scale(1.15);
+      box-shadow: 0 0 0 25px rgba(255,165,0, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255,165,0, 0);
+    }
+  }
+
+  /* Text */
+  .info-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .info-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .infographic {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .infographic {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .info-card {
+      padding: 30px 20px;
+    }
+
+    .info-icon {
+      width: 70px;
+      height: 70px;
+      font-size: 26px;
+    }
+
+    .info-card h3 {
+      font-size: 18px;
+    }
+
+    .info-card p {
+      font-size: 13px;
+    }
+  }

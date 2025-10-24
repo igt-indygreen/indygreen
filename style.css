@@ -878,6 +878,13 @@ color.orange{color: #ff8042;}
       color: #fff;
       transform: scale(1.05);
     }
+    .cylindrical-logos
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 }
 
 

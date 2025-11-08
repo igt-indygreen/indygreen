@@ -1,0 +1,26 @@
+# robots.txt for https://www.indygreentech.com/
+# ----------------------------------------
+# Purpose: Allow search engines to crawl public content but block sensitive or unnecessary files.
+
+User-agent: *
+# Allow everything by default
+Allow: /
+
+# Disallow common private folders (if any exist)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+
+# Block specific file types you don't want indexed
+Disallow: /*.php$
+Disallow: /*.asp$
+Disallow: /*.cgi$
+Disallow: /*.json$
+
+# Optional: Block parameters or duplicate pages (example)
+# Disallow: /*?*
+
+# Sitemap location (important for SEO)
+Sitemap: https://www.indygreentech.com/sitemap.xml

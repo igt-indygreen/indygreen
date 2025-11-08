@@ -14,8 +14,7 @@ if (isset($_POST['submit'])) {
     Name: $name
     Email: $email
     Phone: $phone
-    Message: 
-    $message
+    Message: $message
     ";
 
     $headers = "From: $name <$email>\r\n";
@@ -30,4 +29,4 @@ if (isset($_POST['submit'])) {
 } else {
     echo "<div class='error'>Invalid Request</div>";
 }
-?>
+?> 

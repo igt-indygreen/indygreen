@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
-    $to = "digital35@gmail.com"; // <-- Replace with your email address
+    $to = "digitaligt35@gmail.com"; // <-- Replace with your email address
     $subject = "New Enquiry from Website";
 
     $name = htmlspecialchars($_POST['name']);

@@ -16,6 +16,9 @@
 <title>Indygreen Technologies</title>
 </head>
 <body>
+<div id="preloader">
+    <img src="favicon.ico" alt="Loading..." class="loader-icon">
+  </div> 
 <!-- main -->
 <main>
 <section class="top-header py-2">
@@ -538,6 +541,18 @@
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/ma5-menu.min.js"></script>
 <script type="text/javascript" src="js/animationCounter.min.js"></script>
+<!-- Slider Item-->
+ <script>
+    // Hide preloader when page fully loads
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        content.style.display = 'block';
+      }, 1000); // Match transition duration
+    });
+  </script>
 <!-- Slider Item-->
 </body>
 </html>

@@ -48,7 +48,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
-    
+     
+<div id="preloader">
+    <img src="favicon.ico" alt="Loading..." class="loader-icon">
+  </div> 
 <!-- main -->
 <main>
 <section class="top-header py-2">
@@ -1872,6 +1875,18 @@ style="background: url(img/unit-3.jpg)no-repeat; background-size: cover;">
         counters.forEach(counter => animateCounter(counter));
         started = true;
       }
+    });
+  </script>
+<!-- Slider Item-->
+ <script>
+    // Hide preloader when page fully loads
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        content.style.display = 'block';
+      }, 1000); // Match transition duration
     });
   </script>
 <!-- Slider Item-->

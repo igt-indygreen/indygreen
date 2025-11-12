@@ -48,6 +48,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
+<div id="preloader">
+    <img src="favicon.ico" alt="Loading..." class="loader-icon">
+  </div> 
 <!-- main -->
 <main>
 <section class="top-header py-2">
@@ -631,5 +634,17 @@
 <script type="text/javascript" src="js/animationCounter.min.js"></script>
 <!-- Slider Item-->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+    // Hide preloader when page fully loads
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        content.style.display = 'block';
+      }, 1000); // Match transition duration
+    });
+  </script>
+<!-- Slider Item-->
 </body>
 </html>

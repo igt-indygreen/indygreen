@@ -19,5 +19,17 @@
 	</form>
 
 
+ <script>
+    // Hide preloader when page fully loads
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        content.style.display = 'block';
+      }, 1000); // Match transition duration
+    });
+  </script>
+<!-- Slider Item-->
 </body>
 </html>

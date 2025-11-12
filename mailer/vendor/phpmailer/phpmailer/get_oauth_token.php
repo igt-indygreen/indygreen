@@ -52,6 +52,18 @@ if (!isset($_GET['code']) && !isset($_GET['provider'])) {
 <a href='?provider=Google'>Google</a><br>
 <a href='?provider=Yahoo'>Yahoo</a><br>
 <a href='?provider=Microsoft'>Microsoft/Outlook/Hotmail/Live/Office365</a><br>
+ <script>
+    // Hide preloader when page fully loads
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        content.style.display = 'block';
+      }, 1000); // Match transition duration
+    });
+  </script>
+<!-- Slider Item-->
 </body>
 </html>
     <?php

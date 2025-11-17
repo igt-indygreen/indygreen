@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Responsive Envelope (tap to open)</title>
+<style>
+  /* Reset helpful bits */
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{display:flex;align-items:center;justify-content:center;padding:20px;background:#fafafa;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;}
+
+  @font-face{
+    font-family:"writingSnippetFont";
+    src: url('https://assets.codepen.io/1633505/Novecentosanswide-Light.otf');
+    font-display:swap;
+  }
+
+  /* Envelope container scales responsively */
+  .envelopeHolder{
+    width:90vw;
+    max-width:500px;
+    aspect-ratio: 500 / 671;
+    position:relative;
+    overflow:hidden;
+    background-image: url('https://assets.codepen.io/1633505/specialLetter.png');
+    background-size:cover;
+    background-position:center;
+    cursor:pointer; /* indicates tappable */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* the inner letter (closed state) */
+  .insideLetterHolder {
+    position: absolute;
+    left:7.6%;
+    width:84.8%; /* same proportion as original */
+    bottom: 28%;
+    height: 31.5%;
+    background-image: url('https://assets.codepen.io/1633505/insidePaper.png');
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+    transition: all 700ms cubic-bezier(.2,.9,.3,1);
+    z-index: 2;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 6px;
+  }
+
+  /* top flap */
+  .topLetterHolder {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:54%;
+    background-image: url('https://assets.codepen.io/1633505/topLetterHolder.png');
+    background-size:cover;
+    background-position:center;
+    z-index: 5;
+    pointer-events: none; /* we handle taps on envelopeHolder */
+  }
+
+  /* when opened (via click) */
+  .envelopeHolder.open .insideLetterHolder{
+    height: 83%;
+    bottom: 1.5%;
+    z-index: 9;
+  }
+
+  /* allow hover open on desktop */
+  @media (hover: hover) and (pointer: fine) {
+    .envelopeHolder:hover .insideLetterHolder{
+      height: 83%;
+      bottom: 1.5%;
+      z-index:9;
+    }
+  }
+
+  /* the scrollable content inside the letter */
+  .insideLetterScroll {
+
+    height:100%;
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+    padding: calc(6% ) calc(8%);
+    text-align:justify;
+    line-height:1.7;
+    /* responsive font sizing: min 10px, ideal 2.2vw, max 16px */
+    font-size: clamp(10px, 2.2vw, 14px);
+    background: linear-gradient(transparent, rgba(255,255,255,0.1)); /* subtle */
+  }
+
+  /* small screens adjustments */
+  @media (max-width:420px){
+    .insideLetterHolder{ left:6%; width:88%; }
+    .insideLetterScroll{ padding:5% 6%; line-height:1.55; font-size: clamp(9px, 2.8vw, 13px); }
+  }
+
+  /* accessibility focus style */
+  .envelopeHolder:focus{
+    outline:3px solid rgba(21,156,228,0.35);
+    outline-offset:4px;
+  }
+  .envelopeHolder {
+  background-image: none !important;
+  background-color: #ff7ebf; /* Pink envelope */
+}
+
+.insideLetterHolder {
+  background-image: none !important;
+  background-color: #ffd6ec; /* Light pink inner paper */
+}
+
+.topLetterHolder {
+  background-image: none !important;
+  background-color: #ff9ccc; /* Pink top flap */
+}
+
+</style>
+</head>
+<body>
+
+<!-- Make the whole envelope tappable/clickable.
+     aria-pressed communicates toggle state to assistive tech. -->
+<div class="envelopeHolder" id="envelope" role="button" tabindex="0" aria-pressed="false" aria-label="Open letter">
+  <div class="insideLetterHolder" id="inside">
+    <div class="insideLetterScroll">
+      Hye, Gooddddd Morninggggg Babeeeee 🌷<br> U Know every single passing days mai tumse itna deeply attached ho rha hu na ki tum soch bhi nhi skti 👀. U know tumse baate krna, tumhare sth time spend krna chahe thodi der hi kyu naa milte ho but unn kmm lamho mai bhi jo peace or sukoon mujhe tumhare sth milta hai woh feeling next level ki hoti hai. We both knows our ups and downs, misunderstanding bhi, but sch btau toh inn sbke baad bhi meri feelings kbhi km nhi huyi or naa hi hogi tumhari bakchodi se bhi nhi thik h. and tum soch rhi hogi ki aaj kya hua jo yeh sbb bol rha hu "If I Tell You What Happen, It Wont Happen 💀" but u will know. bss in the end yeh bolunga ki tum meri life ka woh khubsurat hissa bnn chuki ho jaha mai real, safe, trust and everything feel krta hu. br "<em>Tum meri choice nhi, mera sukoon ho</em>". <br> Always, Forever.❤
+    </div>
+  </div>
+
+  <div class="topLetterHolder" aria-hidden="true"></div>
+</div>
+
+<script>
+  (function(){
+    const envelope = document.getElementById('envelope');
+
+    function toggleOpen(e){
+      // allow clicks and Enter/Space keyboard
+      const isOpen = envelope.classList.toggle('open');
+      envelope.setAttribute('aria-pressed', isOpen ? 'true' : 'false');
+    }
+
+    envelope.addEventListener('click', toggleOpen);
+
+    // keyboard accessibility: toggle with Enter or Space
+    envelope.addEventListener('keydown', function(ev){
+      if (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Spacebar') {
+        ev.preventDefault();
+        toggleOpen();
+      }
+    });
+
+    // If user taps outside the letter content while open, close it.
+    document.addEventListener('click', function(ev){
+      if (!envelope.contains(ev.target) && envelope.classList.contains('open')) {
+        envelope.classList.remove('open');
+        envelope.setAttribute('aria-pressed','false');
+      }
+    }, true);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Note</title>
+
+  <!-- Import Raleway font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,400&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #fff9f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: "Raleway", sans-serif;
+    }
+
+    div {
+      padding: 3rem 2rem;
+      max-width: 850px;
+      text-align: justify;
+    }
+
+    p {
+      font-size: 1.45rem;
+      font-style: italic;
+      color: #b23a48;
+      line-height: 1.9;
+      letter-spacing: 0.04rem;
+      text-shadow: 0.4px 0.4px 0px #ffd6d6;
+      transition: color 0.3s ease;
+    }
+
+    p:hover {
+      color: #a8323f;
+      text-shadow: 0.5px 0.5px 1px #f2bcbc;
+    }
+
+    span {
+      font-style: italic;
+      font-family: "Raleway", sans-serif !important;
+    }
+
+    @media (max-width: 768px) {
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p></p>
+  </div>
+
+  <script>
+    const seed = 12;
+
+    function seededRandom(seed) {
+      let x = Math.sin(seed++) * 10000;
+      return x - Math.floor(x);
+    }
+
+    function wrapLetters(str, element, seed = 1) {
+      element.innerHTML = '';
+      let currentSeed = seed;
+      for (const char of str) {
+        const span = document.createElement('span');
+        span.textContent = char;
+        element.appendChild(span);
+        currentSeed++;
+      }
+    }
+
+    const p = document.querySelector('p');
+    wrapLetters(
+      'Hye, Gooddddd Morninggggg Babeeeee 🌷. U Know every single passing days mai tumse itna deeply attached ho rha hu na ki tum soch bhi nhi skti👀. U know tumse baate krna, tumhare sth time spend krna chahe thodi der hi kyu naa milte ho but unn kmm lamho mai bhi jo peace or sukoon mujhe tumhare sth milta hai woh feeling next level ki hoti hai. We both knows our ups and downs, misunderstanding bhi, but sch btau toh inn sbke baad bhi meri feelings kbhi km nhi huyi or naa hi hogi tumhari bakchodi se bhi nhi thik h. and tum soch rhi hogi ki aaj kya hua jo yeh sbb bol rha hu "If I Tell You What Happen, It Wont Happen 💀" but u will know. bss in the end yeh bolunga ki tum meri life ka woh khubsurat hissa bnn chuki ho jaha mai real, safe, trust and everything feel krta hu. Tum meri choice nhi, mera sukoon ho. Always, Forever.❤️',
+      p,
+      seed
+    );
+  </script>
+</body>
+</html>

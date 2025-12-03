@@ -60,7 +60,7 @@ if (!isset($_GET['code']) && !isset($_GET['provider'])) {
       preloader.classList.add('hidden');
       setTimeout(() => {
         content.style.display = 'block';
-      }, 1000); // Match transition duration
+      }, 500); // Match transition duration
     });
   </script>
 <!-- Slider Item-->

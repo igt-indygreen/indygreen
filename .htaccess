@@ -1,18 +1,20 @@
 RewriteEngine On
-
-# Redirect non-www to www and enforce HTTPS
-RewriteCond %{HTTP_HOST} ^indygreentech\.com$ [NC]
-RewriteRule ^ https://www.indygreentech.com%{REQUEST_URI} [L,R=301]
-
-# Optional: ensure HTTPS for www as well
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^www\.indygreentech\.com$ [NC]
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.indygreentech.com/$1 [L,R=301]
 
 <IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/webp "access plus 30 days"
-  ExpiresByType image/jpeg "access plus 30 days"
-  ExpiresByType text/css "access plus 7 days"
-  ExpiresByType application/javascript "access plus 7 days"
+    ExpiresActive On
+
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # CSS, JS (Optional)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
 </IfModule>
